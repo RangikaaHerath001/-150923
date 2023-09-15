@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIE in UCSC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="timer.js"></script>
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body class='overflow-x-hidden'>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">WIE in UCSC</div>
+                <ul class="navbar flex items-center">
+                    <li><button class="bton">Introduction</button></li>
+                    <li><button class="bton">Timeline</button></li>
+                    <li><button class="bton">Prizes</button></li>
+                    <li><button class="bton">FAQ</button></li>
+                    <li><button class="btn">Contact Us</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="topleft flex flex-col justify-center px-2">
+                        <div class=" text-center">
+                            <img class="logo" src="img1.png" alt="">
+                        </div>
+                        <h1 class="my-1 text-center">Web Development Bootcamp</h1>
+                        <p class=" text-center">WIE of UCSC is hosting a comprehensive web development bootcamp. Join us to master essential coding skills, 
+                            frameworks, and tools. Launch your web development career with expert guidance..</p>
+                            <!-- Display the countdown timer in an element -->
+<p class="deal text-center">The deal ends in <span id="demo"></span></p>
+
+<script>
+  // Set the target end date and time (replace with your desired end date)
+  const endDate = new Date("2023-10-03T23:59:59").getTime();
+
+  // Update the countdown every second
+  const x = setInterval(function () {
+    // Get the current date and time
+    const now = new Date().getTime();
+
+    // Calculate the time remaining
+    const timeRemaining = endDate - now;
+
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    // Display the countdown in the <span> element
+    document.getElementById("demo").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    // If the countdown is over, display a message
+    if (timeRemaining < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "Deal has ended!";
+    }
+  }, 1000); // Update every second
+</script>
+
+                                <button class="btn">Join now</button>
+                            </div>
+                    </div>
+                  
+                </div>
+                
+            </section>
+            <hr class="line">
+            <section class="section2">
+                <h1 class="my-2 txt-center ">Prizes</h1>
+                <p class="my-2">"Unlock a World of Knowledge and Connection! 🌐 
+                    Join our Student Internet Plan Giveaway and win the ultimate tool for success. 
+                    Stay connected, research, and excel in your studies with lightning-fast internet! 🚀 
+                    Don't miss your chance to surf towards academic excellence. Enter today!</p>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>Basic</h2>
+                        <ul>
+                            <li class="highlighted">400 GB</li>
+                            <li>60 Mbps Download</li>
+                            <li>10 Mbps Upload</li>
+                            <li>Great for 3 members</li>
+                            <li>Includes Modem</li>
+                            <li><button class="btn">More info</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Pro</h2>
+                        <ul>
+                            <li class="highlighted">700 GB</li>
+                            <li>100 Mbps Download</li>
+                            <li>10 Mbps Upload</li>
+                            <li>Great for 4 members</li>
+                            <li>Includes Modem</li>
+                            <li><button class="btn">More info</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Enterprise</h2>
+                        <ul>
+                            <li class="highlighted">Unlimited</li>
+                            <li>250 Mbps Download</li>
+                            <li>20 Mbps Upload</li>
+                            <li>Great for 5 members</li>
+                            <li>Includes Modem</li>
+                            <li><button class="btn">More info</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <hr>
+            <section class="section3">
+                <h1 class="my-2 txt-center ">Compare Plans</h1>
+                <div class="container plantable">
+                    <table class="table text-center">
+                      <thead>
+                        <tr>
+                          <th></th><th>Basic</th>
+                          <th>Pro</th>
+                          <th>Enterprise</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Download Speed</th>
+                          <td>60 Mbps</svg></td>
+                          <td>100 Mbps</svg></td>
+                          <td>250 Mbps</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Upload Speed</th>
+                          <td>10 Mbps</svg></td>
+                          <td>10 Mbps</svg></td>
+                          <td>20 Mbps</svg></td>
+                        </tr>
+                      </tbody>
+              
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Great for</th>
+                          <td>3 members</svg></td>
+                          <td>4 members</svg></td>
+                          <td>5 members</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Validity</th>
+                          <td>30 days</svg></td>
+                          <td>90 days</svg></td>
+                          <td>180 days</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">1AM to 9AM </th>
+                          <td>250GB</svg></td>
+                          <td>400GB</svg></td>
+                          <td>550GB</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Total</th>
+                          <td>300GB</svg></td>
+                          <td>700GB</svg></td>
+                          <td>Unlimited</svg></td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </section>
+            <hr>
+        </main>
+        <footer>
+            Copyright &copy; IEEE.lk | All rights reserved
+        </footer>
+
+    </div>
+</body>
+
+</html>
